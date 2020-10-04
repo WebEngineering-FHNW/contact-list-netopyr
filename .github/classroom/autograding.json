@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Unit- and integration tests",
+      "setup": "",
+      "run": "./mvnw verify",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": null
+    }
+  ]
+}
