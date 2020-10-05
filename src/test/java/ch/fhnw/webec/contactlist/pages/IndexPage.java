@@ -28,11 +28,18 @@ public class IndexPage {
     @FindBy(id = "no-contact-message")
     private List<WebElement> noContactMessage;
 
+    @FindBy(className = "contact-link")
+    private List<WebElement> contactLinks;
+
     public List<WebElement> getContactDetails() {
         return contactDetails;
     }
 
     public List<WebElement> getNoContactMessage() {
         return noContactMessage;
+    }
+
+    public List<WebElement> getContactLinks() {
+        return contactLinks;
     }
 }
