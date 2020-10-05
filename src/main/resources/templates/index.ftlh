@@ -30,7 +30,7 @@
     </#macro>
 
     <#if selected??>
-    <table>
+    <table id="contact-details">
         <tbody>
         <@row "Vorname" selected.firstName/>
         <@row "Nachname" selected.lastName/>
@@ -39,7 +39,7 @@
         </tbody>
     </table>
     <#else>
-    <p>Bitte wählen Sie einen Kontakt aus</p>
+    <p id="no-contact-message">Bitte wählen Sie einen Kontakt aus</p>
     </#if>
     <!-- Show the details of the selected contact here -->
 </main>
