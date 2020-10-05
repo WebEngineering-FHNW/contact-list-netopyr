@@ -23,25 +23,21 @@
 </nav>
 
 <main>
+
+    <#macro row label value>
+        <tr>
+            <th>${label}:</th>
+            <td>${value}</td>
+        </tr>
+    </#macro>
+
     <#if selected??>
     <table>
         <tbody>
-        <tr>
-            <th>Vorname:</th>
-            <td>${selected.firstName}</td>
-        </tr>
-        <tr>
-            <th>Nachname:</th>
-            <td>${selected.lastName}</td>
-        </tr>
-        <tr>
-            <th>Email:</th>
-            <td>${selected.email[0]!"Keine Mail"}</td>
-        </tr>
-        <tr>
-            <th>Phone:</th>
-            <td>${selected.phone[0]!}</td>
-        </tr>
+        <@row "Vorname" selected.firstName/>
+        <@row "Nachname" selected.lastName/>
+        <@row "Email" selected.email[0]!"Keine Mail"/>
+        <@row "Telefon" selected.phone[0]!/>
         </tbody>
     </table>
     <#else>
