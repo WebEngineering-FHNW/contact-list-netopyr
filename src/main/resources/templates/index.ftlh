@@ -8,9 +8,7 @@
 <body>
 
 <!-- Move the header to a separate file that can be reused -->
-<header>
-    <h1>Contact List</h1>
-</header>
+<#include "header.ftlh">
 
 <nav>
     <ul>
